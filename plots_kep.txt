@@ -1,0 +1,44 @@
+#####
+
+set term pngcairo dashed size 1920,800 enhanced font 'Courier, 28'
+
+
+
+set output "H_t_005.png"
+
+set xlabel "t"
+set ylabel "H"
+
+plot "data_kepler_0.050000.txt" u 1:2 w l lw 2
+set out
+
+set output "q1_q2_005.png"
+set xlabel "q_1"
+set ylabel "q_2"
+
+plot "data_kepler_0.050000.txt" u 3:4 w l lw 1
+
+set out
+
+#################################
+set output "H_t_00005.png"
+
+set xlabel "t"
+set ylabel "H"
+
+plot "data_kepler_0.000500.txt" u 1:2 w l lw 2
+
+set out
+
+
+set output "q1_q2_00005.png"
+set xlabel "q_1"
+set ylabel "q_2"
+
+
+
+plot "data_kepler_0.000500.txt" u 3:4 w l lw 1
+
+set out
+
+set term aqua
